@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 from dash import callback, dcc, Input, Output, html, Dash
 
 #load the data
-vaayu_corporate_master = pd.read_csv(".\VAAYU CORPORATE MASTER SHEET_ ANJI - DATA DUMP.csv")
+vaayu_corporate_master = pd.read_csv("VAAYU CORPORATE MASTER SHEET_ ANJI - DATA DUMP.csv")
 
 #make the week of month column
 vaayu_corporate_master["Week of Month"] = pd.to_datetime(vaayu_corporate_master["DATE"]).dt.day.apply(lambda x: (x-1)//7 +1)
