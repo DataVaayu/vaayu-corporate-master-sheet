@@ -38,7 +38,7 @@ app.layout = html.Div([
 
 def update_graph(value1):
     path=value1
-    fig=px.treemap(vaayu_corporate_master,path=path,height=700,width=1000)
+    fig=px.treemap(vaayu_corporate_master,path=path,height=800,width=1200)
     fig.update_traces(textinfo="label+value")
     
     return fig
